@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<math.h>
+//x^1+x^2+x^3+..
+int main(){
+    int n,a,x;
+    int sum=0;
+    printf("enter term and x");
+    scanf("%d%d",&n,&x);
+    for(int i=1,a=1;i<=n;i++,a++){
+        sum=sum+pow(x,a);
+    }
+    printf("%d",sum);
+}

@@ -1,0 +1,14 @@
+#include<stdio.h>
+//2^x+4^x+6^x+....
+#include<math.h>
+int main(){
+    int n,a,x;
+    int sum=0;
+    printf("enter the term snd power");
+    scanf("%d%d",&n,&x);
+    for(int i=1,a=2;i<=n;i++,a+=2){
+        sum=sum+pow(a,x);
+    }
+    printf("%d",sum);
+
+}

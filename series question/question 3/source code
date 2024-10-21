@@ -1,0 +1,12 @@
+//10+9+8+...+1
+#include<stdio.h>
+int main(){
+    int n,a;
+    int sum=0;
+    printf("enter number of term");
+    scanf("%d",&n);
+    for(int i=1,a=10;i<=n;i++,a--){
+        sum=sum+a;
+    }
+    printf("%d",sum);
+}

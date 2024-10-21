@@ -1,0 +1,13 @@
+#include<stdio.h>
+//9+13+17+.....
+int main(){
+    int n,a;
+    int sum=0;
+    printf("enter n");
+    scanf("%d",&n);
+    for(int i=1,a=9;i<=n;i++,a+=4){
+        sum=sum+a;
+    }
+    printf("%d",sum);
+
+}

@@ -1,0 +1,13 @@
+#include<stdio.h>
+//9^2+13^2+17^2+....
+#include<math.h>
+int main(){
+    int n,a;
+    int sum=0;
+    printf("enter term");
+    scanf("%d",&n);
+    for(int i=1,a=9;i<=n;i++,a+=4){
+        sum=sum+pow(a,2);
+    }
+    printf("%d",sum);
+}
